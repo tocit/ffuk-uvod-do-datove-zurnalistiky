@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Intro to Data Journalism</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Data Journalism</h1>
+					<h3>An Introduction</h3>
+				</br>
+			</br>
+			<p>
+				<a href="http://www.linkedin.com/in/petrkoci">Petr Kočí</a> [<a href="https://twitter.com/tocit">@tocit</a>] </br> <a href="http://www.linkedin.com/pub/marcel-%C5%A1ulek/81/bab/91">Marcel Šulek</a> [<a href="https://twitter.com/veproza">@veproza</a>]
+			</p>
+		</br>
+		<h3>Vilnius, December 7 - 8, 2013</h3>
+	</section>
+
+	<section>
+		<a href="http://service.ihned.cz/karlin-web/"><img src="newsroom.jpg" style="border : none"></a>
+	</section>
+
+	<section>
+		<p><img src="titulka.png" style="border : none; float : left">
+			<ul style="float : right; width : 50%">
+				<li><a href="http://ihned.cz/">Hospodářské noviny</a> </br>– a Czech business daily</li>
+				<li><a href="http://ihned.cz/data">Datablog</a> (since April 2012)</li>
+				<li>This presentation:</br><a href="http://datasklad.ihned.cz/vilnius">http://datasklad.ihned.cz/vilnius/</a></li>
+			</ul>
+
+			<aside class="notes">
+				<ul>
+					<li>jako Financial Times, ale menší</li>
+					<li>propouštění, hopodářské potíže</li>
+					<li>představit team a stručná historie - historka s tím, jak jsme chtěli něco od programátorů</li>
+					<li>můžete nám říct něco o sobě?</li>
+				</ul>
+			</aside>
+
+		</section>
+
+		<section>
+			<h2>Let's play with data!</h2>
+			<p>We will try to make a map similar to <a href="http://data.blog.ihned.cz/c1-59111320-vysledky-voleb-v-grafech-a-cislech-prubezne-aktualizujeme">this</a> or <a href="http://data.blog.ihned.cz/c1-59990350-nasledky-povodni-v-prehledne-mape">this one</a>.</p>
+			<p>But first, let's create a sample data set: <a href="http://bit.ly/vilnius2013">http://bit.ly/vilnius2013</a></p>
+		</section>
+
+
+		<section>
+			<h2>Our Data Toolbox</h2>
+			<h3>Please download and install</h3>
+			<ul>
+				<li class="fragment"><a href="https://www.google.com/intl/en/chrome/browser/">Google Chrome</a></li>
+				<li class="fragment">Plain text editor (eg. <a href="http://www.sublimetext.com/">Sublime Text</a>)</li>
+				<li class="fragment"><a href="http://openrefine.org/">Open Refine</a></li>
+				<li class="fragment"><a href="http://cran.gis-lab.info/">R</a></li>
+				<li class="fragment"><a href="http://www.rstudio.com/ide/download/desktop">R Studio</a></li>
+				<li class="fragment"><a href="http://tabula.nerdpower.org/">Tabula</a>
+					<li class="fragment"><a href="http://www.qgis.org/ru/site/">QGIS</a></li>
+					<li class="fragment">If you don't have one, <a href="https://accounts.google.com/SignUp?lp=1&hl=ru">create a free Google account</a></li>
+				</ul>
+
+			</section>
+
+			<section>
+				<section>
+					<h2>How could data be useful to journalists?</h2>
+					<iframe width="853" height="480" src="//www.youtube.com/embed/MpMir9UgmSs" frameborder="0" allowfullscreen></iframe>
+				</section>
+
+
+				<section>
+					<h3>Philip Meyer (<a href="http://philipmeyer.authorsxpress.com/">his blog</a>)</h3>
+					<img src="http://www.ire.org/media/uploads/philipmeyer_small.jpg" style="border : none">
+					<blockquote cite="http://philipmeyer.authorsxpress.com/">
+						One of the earliest examples of computer assisted reporting was in 1967, after riots in Detroit, when Meyer, on temporary assignment with the Detroit Free Press, used survey research, analyzed on a mainframe computer, to show that people who had attended college were equally likely to have rioted as were high school dropouts. -- <a href="http://en.wikipedia.org/wiki/Philip_Meyer">Wikipedia</a>
+					</blockquote>
+
+				</section>
+
+				<section>
+					<h3>Stanislav Gross</h3>
+					<img src="gross.png" style="border : none">
+				</section>
+
+
+				<section>
+					<p>1960: Computer Aided Reporting</p>
+					<p class="fragment">2000: Database Journalism</p>
+					<p class="fragment">2005: Data-driven Journalism</p>
+					<p class="fragment">2010: Data Journalism, "Fact-based journalism"</p>
+					<p class="fragment">Future: <a href="http://en.wikipedia.org/wiki/Newsgame">Newsgames</a>, <a href="http://www.dronejournalism.org/">Drone Journalism</a>, <a href="http://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a> ...</p>
+					<h3 class="fragment">No matter what we call it, it's still Journalism.</h3>
+				</section>
+
+				<section>
+					<h2>No matter what we call it, it's still Journalism.</h2>
+					<p>We just explore new technological possibilities to <em>get the information</em>, <em>understand</em> it and <em>tell the story</em>.</p>
+					<p class="fragment">Sometimes, we need to scrape the source's web site to get the information we need, sometimes it's better and easier just to make a phone call.</p>
+					<p class="fragment">It's important to choose the right tool to fulfill our job.</p>
+
+					<h2 class="fragment" style="color : red; font-weight : bold">Figure out which method is most effective.</h2>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>Why is Data Journalism Important Now?</h3>
+					<ul>
+						<li class="fragment">Flood of publicly available data from institutions and corporations (<a href="http://life.ihned.cz/c1-60367920-video-kartoteka-v-niz-je-zaznam-temer-kazdeho-cecha-pripomina-stare-sci-fi">before</a> - <a href="http://portal.mpsv.cz/sz/download">after</a>)</li>
+						<li class="fragment">Flood of data generated by each one of us</li>
+						<img src="data.png" class="fragment" style="border : none">
+					</ul>
+				</section>
+
+				<section>
+					<h3>Why is Data Journalism Important Now?</h3>
+					<ul>
+						<li class="fragment">More on-line tools freely availabe and easier to learn</li>
+						<li class="fragment">Demand of the public: We are overloaded with information, we don't need more, but better - please help us make sense of it all</li>
+						<li class="fragment">Crisis of the traditional business model of newspapers</li>
+					</ul>
+				</section>
+
+			
+				<section>
+					<h3>Challenges of Data Journalism</h3>
+					<ul>
+						<li class="fragment">Unreliable, broken and dirty data full of errors</li>
+						<li class="fragment">Data in closed proprietary formats</li>
+						<li class="fragment">Frequent changes in methodology</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Challenges of Data Journalism</h3>
+					<ul>
+						<li class="fragment">Time consuming</li>
+						<li class="fragment">Uncertain results</li>
+						<li class="fragment">Cost efficiency</li>
+						<li class="fragment">Overhyped</li>
+					</ul>
+				</section>
+ 
+
+			</section>
+
+			<section>
+				<section>
+					<h3>Examples from around the World</h3>
+					<a href="http://www.nytimes.com/interactive/2008/11/26/nyregion/20081128_PARKING.html"><img src="parking.png" style="border : none"></a>
+				</section>
+
+				<section>
+					<h3>More examples from NYT</h3>
+					<ul>
+						<li>
+							<a href="http://www.nytimes.com/interactive/business/buy-rent-calculator.html">Is It Better To Buy or Rent?</a>
+						</li>
+						<li>
+							<a href="http://www.nytimes.com/interactive/2010/02/02/us/politics/20100201-budget-porcupine-graphic.html">Budget Forecasts, Compared with Reality</a>
+						</li>
+						<li>
+							<a href="http://www.nytimes.com/interactive/2012/11/02/us/politics/paths-to-the-white-house.html">512 Paths to the White House</a>
+						</li>
+						<li>
+							<a href="http://www.nytimes.com/interactive/2012/12/30/multimedia/2012-the-year-in-graphics.html">2012 in infographics</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Examples from around the World</h3>
+					<a href="http://www.theguardian.com/world/interactive/2013/nov/01/snowden-nsa-files-surveillance-revelations-decoded#section/1"><img src="nsa.png" style="border : none"></a>
+				</section>
+
+				<section>
+					<h3>More examples from the Guardian</h3>
+					<ul>
+						<li>
+							<a href="http://www.theguardian.com/politics/mps-expenses">MPs Expenses Crowdsourcing</a>
+						</li>
+						<li>
+							<a href="http://revistaepoca.globo.com/diagrama/noticia/2011/10/diagrama-298-anos-de-falacao.html">Época: MPs Phone Bills in Brazil</a>
+						</li>
+						<li>
+							<a href="http://www.theguardian.com/uk/interactive/2011/dec/07/london-riots-twitter">How Riot Rumors Spread on Twitter</a>
+						</li>
+						<li>
+							<a href="http://www.theguardian.com/world/interactive/2012/may/08/gay-rights-united-states">Gay Rights in the United States</a>
+						</li>
+						<li>
+							<a href="http://www.theguardian.com/news/datablog/2012/dec/04/government-spending-department-2011-12">Budget Visualisations</a>
+						</li>
+						<li>
+							<a href="http://www.theguardian.com/world/datablog/2013/dec/06/how-south-africa-changed-since-nelson-mandelas-release-prison-1990">Guardian Datablog</a>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Examples from around the World</h3>
+					<a href="http://www.icij.org/offshore"><img src="offshore.png" style="border : none"></a>
+				</section>
+
+
+				<section>
+					<h3>Examples from around the World</h3>
+					<a href="http://vis4.net/labs/parteispenden/"><img src="german.png" style="border : none"></a>
+				</section>
+
+				<section>
+					<h3>More examples from around the world</h3>
+					<ul>
+						<li>
+							<a href="http://vis4.net/labs/guttenplag/guttenberg-diss-en.pdf">Plagiarism of German minister of defence</a>
+						</li>
+						<li>
+							<a href="http://revistaepoca.globo.com/diagrama/noticia/2011/10/diagrama-298-anos-de-falacao.html">Época: MPs Phone Bills in Brazil</a>
+						</li>
+						<li>
+							<a href="http://opendata.zeit.de/atomreaktoren/#/en/">How many people live near nuclear power plants</a>
+						</li>
+						<li>
+							<a href="http://nick123.ru/dtp2011/#result">Pedestrian accidents in Novosibirsk</a>
+						</li>
+						<li>
+							<a href="http://www.zeit.de/politik/deutschland/2013-09/wahlumfragen-parteilichkeit-bundestagswahl">Bias in German election Polls</a>
+						</li>
+						<li>
+							<a href="http://maps.latimes.com/crime/">LA Crime</a>
+						</li>
+												<li>
+							<a href="http://www.globaleditorsnetwork.org/dja/">Data Journalism Awards</a>
+						</li>
+
+						<li>
+							<a href="http://www.informationisbeautifulawards.com/2013-winners/">Information is Beautiful Awards</a>
+						</li>
+
+					</ul>
+				</section>
+
+
+			</section>
+
+			<section>
+				<section><h3>Some of our projects</h3>
+				<a href="http://data.blog.ihned.cz/"><img src="datablog.png" style="border : none"></a>
+				</section>
+
+				<section>
+				<h3><a href="https://docs.google.com/presentation/d/17Liwt21Y-WgcD2NmVCoJjS7-ieH8OgQY7EStisMc0V4/edit">All the cars towed away in Prague</a></h3>
+				<a href="http://www.ihned.cz/odtahy"><img src="odtahy.png" style="border : none"></a>
+				</section>
+
+				<section>
+				<h3>Where did five billion crowns go?</h3>
+				<a href="http://data.blog.ihned.cz/c1-56583150-oranzove-zakazky"><img src="cez.png" style="border : none"></a>
+				</section>
+
+				<section>
+				<h3>Where did five billion crowns go?</h3>
+				<a href="http://data.blog.ihned.cz/c1-56583150-oranzove-zakazky"><img src="cez.png" style="border : none"></a>
+				</section>
+
+
+				<section>
+				<h3>Which presidential candidate is right for you?</h3>	
+				<a href="http://zpravy.ihned.cz/c1-59115400-prezidentska-kalkulacka-zeman-schwarzenberg"><img src="kalkulacka.png" style="border : none"></a>
+				</section>
+
+				<section>
+				<h3>Quick and dirty charts</h3>
+				<a href="http://data.blog.ihned.cz/c1-57437290-jak-se-dalajlamismus-a-falesne-adorovani-pussy-riot-podepisuje-na-ceskem-exportu"><img src="dalajlama.png" style="border : none"></a>
+				</section>
+
+				<section>
+				<h3>GDP predictions</h3>
+				<a href="http://data.blog.ihned.cz/c1-58291130-prognozy-hdp-kdo-je-nejpresnejsi"><img src="gdp.png" style="border : none"></a>
+				</section>
+
+ 				<section>
+				<h3>Debts of All Municipalities</h3>
+				<a href="http://data.blog.ihned.cz/c1-58868120-mapa-dluhu-vsech-6-246-obecnich-uradu-hrozi-vasemu-mestu-ci-vesnici-krach"><img src="dluhy.png" style="border : none"></a>
+				</section>
+
+
+ 				<section>
+				<h3>Who Is Selling Rotten Food</h3>
+				<a href="http://data.blog.ihned.cz/c1-58395180-kdo-u-vas-prodaval-zkazene-jidlo-vsechny-objevy-potravinarske-inspekce-v-jedne-mape"><img src="jidlo.png" style="border : none"></a>
+				</section>
+
+				<section>
+					<h3>Presidential Timeline</h3>
+					<a href="http://zpravy.ihned.cz/politika/c1-59089050-prezidentska-casova-osa-bobosikova-jde-do-prvni-tridy-zeman-vyloucen-z-ksc"><img src="timeline.png" style="border : none"></a>
+				
+				</section>
+
+				<section>
+					<h3>Secret Service Investigating Prime Minister's Wife</h3>
+					<a href="http://datasklad.ihned.cz/nagygate/"><img src="nagy.png" style="border : none"></a>
+				
+				</section>
+
+				<section>
+					<h3>The Map of Power</h3>
+					<a href="http://ihned.cz/mapamoci"><img src="mapamoci.png" style="border : none"></a>
+				
+				</section>
+
+				<section>
+					<h3>Public Transportation in Prague</h3>
+					<a href="http://ihned.cz/mhd"><img src="mhd.png" style="border : none"></a>
+				
+				</section>
+
+				<section>
+					<h3>Armed and Dangerou</h3>
+					<a href="http://data.blog.ihned.cz/c1-59840530-ozbrojeni-a-nebezpecni-podivejte-se-na-tvare-91-nejhledanejsich-osob-v-cesku"><img src="nebezpecni.png" style="border : none"></a>
+				
+				</section>
+
+				<section>
+					<h3>When Are You Going to Die?</h3>
+					<a href="http://datasklad.ihned.cz/umrti/"><img src="umrti.png" style="border : none"></a>
+				
+				</section>
+				
+				<section>
+					<h3>Crime Rates According to Cell Phone Data</h3>
+					<a href="http://data.blog.ihned.cz/c1-61341380-prepadeni-na-barrandove-drogy-v-holesovicich-kriminalita-optikou-mobilnich-dat"><img src="kriminalita.png" style="border : none"></a>
+				</section>
+
+				<section>
+					<h3>Why People Got to Hospital</h3>
+					<a href="http://datasklad.ihned.cz/hospitalizace/www/"><img src="hospi.png" style="border : none"></a>
+				</section>
+
+				<section>
+					<h3>How Active was Your MP</h3>
+					<a href="http://datasklad.ihned.cz/proklepni-si-sveho-poslance/www/"><img src="psp.png" style="border : none"></a>
+				</section>
+
+
+			</section>
+
+			<section>
+				<h2>What is data?</h2>
+				<p>From Latin <em>data</em>, nominative plural of datum (“that is given”)</p>
+				<p>We are most interested in data that is
+					<ol>
+						<li class="fragment">structured</li>
+						<li class="fragment">computer-readable</li>
+						<li class="fragment">usually tabular (XLS, CSV)</li>
+						<li class="fragment">or tree-like (XML, JSON)</li>
+					</ol>
+				</p>
+			</section>
+
+			<section>
+				<h2>Data != Truth</h2>
+				<p class="fragment">We need to <em>acquire it</em>, <em>clean it</em>, <em>refine it</em>, <em>analyze it</em> and <em>try to extract meaning</em> (stories) from it.</p>
+				<img src="https://pbs.twimg.com/media/BaoZ3xlIgAA7PrL.jpg:large" class="fragment">
+			</section>
+
+			<section>
+				<h3>Important questions to ask</h3>
+				<ul>
+					<li class="fragment">Where did the data come from? (<a href="https://www.facebook.com/photo.php?fbid=756273041053046&set=a.413965805283773.111848.345130612167293&type=1&theater">eg.</a>)</li>	
+					<li class="fragment">What is the motivation of the person or institution that is collecting the data?</li>
+					<li class="fragment">What methods were used collecting the data and have the methods change in time?</li>
+					<li class="fragment">Is the data complete? What is missing and why?</li>
+					<li class="fragment">What does the data mean and how can it be useful to our readers?</li>
+
+				</ul>
+			</section>
+
+
+			<section>
+				<h3>Scraping</h3>
+				<p>Obtaining data from websites programatically</p>
+				<h2>Tools</h2>
+				<ul>
+					<li>CTRL+C, CTRL+V</li>
+					<li>
+						<a href="http://bit.ly/tablecapture">Table Capture Chrome Plugin</a>
+					</li>
+					<li>
+						<a href="https://www.google.cz/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&sqi=2&ved=0CEUQjBAwAQ&url=https%3A%2F%2Fdocs.google.com%2Fspreadsheet%2F&ei=UVukUpD4KsSshQfwz4GwCA&usg=AFQjCNHPCuGMgz64V94pmYL1Vd6j8Az_Sw&sig2=T81w4YukMlZykqa7vrvCvQ">Google Spredsheet</a>
+					</li>
+					<li>
+						<a href="http://import.io/">Import.io</a>
+					</li>
+					<li>
+						<a href="http://www.outwit.com/products/hub/">Outwit Hub</a> (<a href="https://leanpub.com/scrapingforjournalists">Scraping For Journalists</a>, <a href="scraping.pdf">secret link</a>)
+					</li>
+					<li>
+						<a href="http://openrefine.org/">Open Refine</a> - <a href="http://schoolofdata.org/handbook/recipes/scraping-multiple-pages-with-refine-and-scraper/">Tutorial 1</a>, <a href="http://onlinejournalismblog.com/2012/01/13/sftw-scraping-data-with-google-refine/">Tutorial 2</a>
+					</li>
+					<li><a href="https://scraperwiki.com/">Scraperwiki</a>
+					</li>
+					<li>Programming: R, Python, JavaScript.... Always the same principle</li>
+				</ul>
+				<p class="fragment">Not only tables, but also <a href="http://data.blog.ihned.cz/c1-59445690-klaus-slovnik">text</a>, pictures....</p>
+			</section>
+ 
+			<section>
+				<h3>Cleaning and aggregating data</h3>
+				<ul>
+					<li>
+						Google Spreadsheet or Excel
+					</li>
+
+					<li>
+						<a href="http://vis.stanford.edu/wrangler/">Data Wrangler</a>
+					</li>
+
+					<li>
+						<a href="http://openrefine.org/">Open Refine</a> (<a href="odtahy.xls">sample data</a>)
+					</li>
+
+				</ul>
+			</section>
+
+			<section>
+				<h3>Extracting Data From PDFs</h3>
+				<ul>
+					<li>
+						<a href="http://tabula.nerdpower.org/">Tabula (free)</a>						
+					</li>
+
+					<li>
+						<a href="http://www.adobe.com/cz/products/acrobatpro.html">Adobe Acrobat Pro (commercial)</a>
+					</li>
+
+				</ul>
+			</section>
+
+			<section>
+				<h3>Visualising Data</h3>
+				<ul>
+					<li>
+						<a href="https://www.google.cz/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&sqi=2&ved=0CEUQjBAwAQ&url=https%3A%2F%2Fdocs.google.com%2Fspreadsheet%2F&ei=UVukUpD4KsSshQfwz4GwCA&usg=AFQjCNHPCuGMgz64V94pmYL1Vd6j8Az_Sw&sig2=T81w4YukMlZykqa7vrvCvQ">Google Spredsheet</a>
+					</li>
+
+					<li>
+						<a href="http://www.google.com/drive/apps.html#fusiontables">Google Fusion Tables</a>
+					</li>
+
+					<li>
+						<a href="http://datawrapper.de/">Datawrapper</a>
+					</li>
+
+					<li>
+						<a href="http://http://infogr.am/">Infogram</a>
+					</li>
+
+
+					<li>
+						<a href="http://timeline.knightlab.com//">Timeline.js</a>
+					</li>
+
+					<li>
+						<a href="http://propublica.github.io/timeline-setter/">Timeline Setter</a>
+					</li>
+
+					<li>
+						<a href="http://www.wordle.net/">Wordle (Wordclouds)</a>
+					</li>
+
+					<li>Programming: D3.js, R</li>
+				</ul>
+			</section>
+
+						<section>
+				<h3>Continue on your own</h3>
+				<ul>
+					<li>
+						<a href="http://ria.ru/files/book/_site/index.html">Data Journalism Handbook in Russian</a>
+					</li>
+
+					<li>
+						<a href="http://schoolofdata.org/">School of Data</a>
+					</li>
+
+					<li>
+						<a href="https://twitter.com/tocit/lists/datajournalism">Datajournalism - My Twitter List</a>
+					</li>
+
+					<li>
+						<a href="http://onlinejournalismblog.com/tag/data-journalism/">Paul Bradshaw - Online Journalism Blog</a>
+					</li>
+
+					<li>
+						<a href="http://source.opennews.org/">The Source</a>
+					</li>
+
+					<li>
+						<a href="caffeinated-subscriptions.xml">Other Blogs I Follow</a>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Thank you, and let's stay in touch!</h3>
+			</section>
+  
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+</script>
+
+</body>
+</html>

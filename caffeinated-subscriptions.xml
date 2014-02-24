@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<opml version="1.0">
+    <head>
+        <title>Subscriptions List</title>
+    </head>
+    <body>
+        <outline title="osobní" text="osobní">
+            <outline text="Blok Filipa Ronka" title="Blok Filipa Ronka" type="rss" xmlUrl="http://blok.rozanek.cz/wp-rss2.php" htmlUrl="http://blok.rozanek.cz"/>
+            <outline text="Pixynergia" title="Pixynergia" type="rss" xmlUrl="http://pixy.cz/pixynergia/feed/" htmlUrl="http://pixy.cz/pixynergia"/>
+            <outline text="All your cookies are belong to me" title="All your cookies are belong to me" type="rss" xmlUrl="http://allyourcookies.tumblr.com/rss" htmlUrl="http://allyourcookies.tumblr.com/"/>
+            <outline text="puts text if text.size > 140" title="puts text if text.size > 140" type="rss" xmlUrl="http://over140chars.blogspot.com/feeds/posts/default" htmlUrl="http://over140chars.blogspot.com/feeds/posts/default"/>
+            <outline text="Pixynergia" title="Pixynergia" type="rss" xmlUrl="http://pixy.cz/pixynergia/feed/rss" htmlUrl="http://pixy.cz/pixynergia"/>
+            <outline text="Fuxoft" title="Fuxoft" type="rss" xmlUrl="http://blog.fuxoft.cz/atom.xml" htmlUrl="http://blog.fuxoft.cz/feeds/posts/default"/>
+            <outline text="Schroedingerova 13" title="Schroedingerova 13" type="rss" xmlUrl="http://schroedinger13.blogspot.com/atom.xml" htmlUrl="http://schroedinger13.blogspot.com/feeds/posts/default"/>
+            <outline text="Ctenarsky denik" title="Ctenarsky denik" type="rss" xmlUrl="http://www.rozhlas.cz/export/ctenarskydenik" htmlUrl="http://www.rozhlas.cz/ctenarskydenik"/>
+            <outline text="Blog: Jan Borovička" title="Blog: Jan Borovička" type="rss" xmlUrl="http://borovicka.blog.idnes.cz/rss/" htmlUrl="http://borovicka.blog.iDNES.cz/"/>
+            <outline text="La Trine" title="La Trine" type="rss" xmlUrl="http://www.latrine.cz/feed/rss2/" htmlUrl="http://www.latrine.cz/"/>
+            <outline text="Indian Times" title="Indian Times" type="rss" xmlUrl="http://evadub.blogspot.com/feeds/posts/default" htmlUrl="http://evadub.blogspot.com/feeds/posts/default"/>
+            <outline text="http://daniel-deyl.blog.tyden.cz/" title="http://daniel-deyl.blog.tyden.cz/" type="rss" xmlUrl="http://daniel-deyl.blog.tyden.cz/rss/" htmlUrl="http://daniel-deyl.blog.tyden.cz/"/>
+            <outline text="Sovívoko" title="Sovívoko" type="rss" xmlUrl="http://www.sovivoko.eu/?feed=rss2" htmlUrl="http://sovivoko.pribehy.cz"/>
+            <outline text="Obrázky budov a výkřiky z balgónu" title="Obrázky budov a výkřiky z balgónu" type="rss" xmlUrl="http://leznoplak.blogspot.com/feeds/posts/default" htmlUrl="http://leznoplak.blogspot.com/feeds/posts/default"/>
+            <outline text="Heroutův Učitelský Notýsek" title="Heroutův Učitelský Notýsek" type="rss" xmlUrl="http://feeds.feedburner.com/heroutuvucitelskynotysek" htmlUrl="http://www.herout.net"/>
+            <outline text="Different Gaming" title="Different Gaming" type="rss" xmlUrl="http://differentgaming.blogspot.com/feeds/posts/default" htmlUrl="http://differentgaming.blogspot.com/feeds/posts/default"/>
+        </outline>
+        <outline title="geodata" text="geodata">
+            <outline text="Free and Open Source GIS Ramblings" title="Free and Open Source GIS Ramblings" type="rss" xmlUrl="http://underdark.wordpress.com/feed/" htmlUrl="http://anitagraser.com"/>
+        </outline>
+        <outline title="média" text="média">
+            <outline text="PressThink" title="PressThink" type="rss" xmlUrl="http://journalism.nyu.edu/pubzone/weblogs/pressthink/index.xml" htmlUrl="http://archive.pressthink.org/"/>
+            <outline text="The Czech Lead" title="The Czech Lead" type="rss" xmlUrl="http://jiri.majstr.cz/?feed=rss2" htmlUrl="http://jiri.majstr.cz"/>
+            <outline text="Blog: Redakční blog MF DNES" title="Blog: Redakční blog MF DNES" type="rss" xmlUrl="http://mfdnes.blog.idnes.cz/rss/" htmlUrl="http://MFDNES.blog.iDNES.cz/"/>
+            <outline text="Zero Percent Idle" title="Zero Percent Idle" type="rss" xmlUrl="http://timwindsor.com/feed/" htmlUrl="http://timwindsor.com"/>
+            <outline text="These Digital Times" title="These Digital Times" type="rss" xmlUrl="http://feeds2.feedburner.com/wordpress/eyps" htmlUrl="http://johnwelsh.wordpress.com"/>
+            <outline text="Clay Shirky" title="Clay Shirky" type="rss" xmlUrl="http://www.shirky.com/weblog/feed/" htmlUrl="http://www.shirky.com/weblog"/>
+            <outline text="ARGUMENTACE" title="ARGUMENTACE" type="rss" xmlUrl="http://argumentace.blogspot.cz/feeds/posts/default" htmlUrl="http://argumentace.blogspot.com/feeds/posts/default"/>
+            <outline text="FRONTLINE - View Online | PBS" title="FRONTLINE - View Online | PBS" type="rss" xmlUrl="http://www.pbs.org/wgbh/pages/frontline/rss/video.xml" htmlUrl="http://www.pbs.org/frontline/rss/redir/wgbh/pages/frontline/view/"/>
+            <outline text="Online žurnalistika" title="Online žurnalistika" type="rss" xmlUrl="http://online.zurnalistika.cz/feed/rss/" htmlUrl="http://online.zurnalistika.cz"/>
+            <outline text="Rough Type: Nicholas Carr's Blog" title="Rough Type: Nicholas Carr's Blog" type="rss" xmlUrl="http://feeds.feedburner.com/roughtype/ungc" htmlUrl="http://www.roughtype.com/"/>
+            <outline text="Digital Capitalism" title="Digital Capitalism" type="rss" xmlUrl="http://feeds2.feedburner.com/digitalcapitalism" htmlUrl="http://digitalcapitalism.com"/>
+        </outline>
+        <outline title="R" text="R">
+            <outline text="R-bloggers" title="R-bloggers" type="rss" xmlUrl="http://feeds.feedburner.com/rbloggers" htmlUrl="http://www.r-bloggers.com"/>
+        </outline>
+        <outline title="datová žurnalistika" text="datová žurnalistika">
+            <outline text="Source" title="Source" type="rss" xmlUrl="http://source.mozillaopennews.org/en-us/rss/" htmlUrl="http://source.mozillaopennews.org/"/>
+            <outline text="SPIEGEL ONLINE - Wissenschaft - Datenlese" title="SPIEGEL ONLINE - Wissenschaft - Datenlese" type="rss" xmlUrl="http://www.spiegel.de/thema/daten/index.rss" htmlUrl="http://www.spiegel.de"/>
+            <outline text="News: Datablog | guardian.co.uk" title="News: Datablog | guardian.co.uk" type="rss" xmlUrl="http://www.guardian.co.uk/news/datablog/rss" htmlUrl="http://www.theguardian.com/news/datablog"/>
+            <outline text="Holovaty.com" title="Holovaty.com" type="rss" xmlUrl="http://www.holovaty.com/rss/" htmlUrl="http://www.holovaty.com/"/>
+            <outline text="Friedrich Lindenberg" title="Friedrich Lindenberg" type="rss" xmlUrl="http://pudo.org/atom.xml" htmlUrl="http://pudo.org/atom.xml"/>
+            <outline text="yelvington.com" title="yelvington.com" type="rss" xmlUrl="http://www.yelvington.com/node/feed" htmlUrl="http://www.yelvington.com"/>
+            <outline text="Online Journalism Blog" title="Online Journalism Blog" type="rss" xmlUrl="http://feeds.feedburner.com/onlinejournalismblog" htmlUrl="http://onlinejournalismblog.wordpress.com"/>
+            <outline text="News Entrepreneurs" title="News Entrepreneurs" type="rss" xmlUrl="http://newsentrepreneurs.blogspot.com/feeds/posts/default" htmlUrl="http://newsentrepreneurs.blogspot.com/feeds/posts/default"/>
+            <outline text="Typofilos" title="Typofilos" type="rss" xmlUrl="http://typomil.com/typofilos/feed/" htmlUrl="http://typomil.com/typofilos"/>
+            <outline text="information aesthetics" title="information aesthetics" type="rss" xmlUrl="http://feeds.infosthetics.com/infosthetics" htmlUrl="http://infosthetics.com/"/>
+            <outline text="Vizualizace informací" title="Vizualizace informací" type="rss" xmlUrl="http://vizualizace.tumblr.com/rss" htmlUrl="http://vizualizace.tumblr.com/"/>
+            <outline text="Information Is Beautiful" title="Information Is Beautiful" type="rss" xmlUrl="http://feeds.feedburner.com/informationisbeautiful" htmlUrl="http://www.informationisbeautiful.net"/>
+            <outline text="OJR" title="OJR" type="rss" xmlUrl="http://feeds.feedburner.com/ojr/sugz" htmlUrl="http://www.ojr.org/ojr"/>
+        </outline>
+        <outline title="vizualizace" text="vizualizace">
+            <outline text="bl.ocks.org - mbostock" title="bl.ocks.org - mbostock" type="rss" xmlUrl="http://bl.ocks.org/mbostock.rss" htmlUrl="http://bl.ocks.org/mbostock"/>
+            <outline text="WTF Visualizations" title="WTF Visualizations" type="rss" xmlUrl="http://wtfviz.net/rss" htmlUrl="http://wtfviz.net/"/>
+            <outline text="Thumbs Up Viz" title="Thumbs Up Viz" type="rss" xmlUrl="http://thumbsupviz.com/rss" htmlUrl="http://thumbsupviz.com/"/>
+            <outline text="The Functional Art: An Introduction to Information Graphics and Visualization" title="The Functional Art: An Introduction to Information Graphics and Visualization" type="rss" xmlUrl="http://www.thefunctionalart.com/feeds/posts/default" htmlUrl="http://www.thefunctionalart.com/feeds/posts/default"/>
+            <outline text="information aesthetics" title="information aesthetics" type="rss" xmlUrl="http://feeds.infosthetics.com/infosthetics.com/" htmlUrl="http://infosthetics.com/"/>
+        </outline>
+        <outline title="lifestyle" text="lifestyle">
+            <outline text="Šárčiny stránky" title="Šárčiny stránky" type="rss" xmlUrl="http://dolcevita.blog.cz/feed/rss" htmlUrl="http://dolcevita.blog.cz/"/>
+            <outline text="Rozinky a mandle" title="Rozinky a mandle" type="rss" xmlUrl="http://www.souk.cz/?feed=rss2" htmlUrl="http://souk.cz"/>
+            <outline text="Czech Please" title="Czech Please" type="rss" xmlUrl="http://feeds.feedburner.com/czechplease" htmlUrl="http://czechoutchannel.blogspot.com/feeds/posts/default"/>
+        </outline>
+        <outline title="datová žurnalistika CZ" text="datová žurnalistika CZ">
+            <outline text="Blog projektu Rozpočet Veřejně" title="Blog projektu Rozpočet Veřejně" type="rss" xmlUrl="http://blog.rozpocetverejne.cz/feeds/posts/default" htmlUrl="http://blog.rozpocetverejne.cz/feeds/posts/default"/>
+        </outline>
+        <outline title="tech news CZ" text="tech news CZ">
+            <outline text="Misantropův zápisník" title="Misantropův zápisník" type="rss" xmlUrl="http://feeds.feedburner.com/misantrop" htmlUrl="http://www.misantrop.info"/>
+            <outline text="Fandorovy vyprávěnky" title="Fandorovy vyprávěnky" type="rss" xmlUrl="http://feeds.feedburner.com/fandor" htmlUrl="http://www.fandor.cz"/>
+            <outline text="Co de asi ?" title="Co de asi ?" type="rss" xmlUrl="http://codeasi.blogspot.com/feeds/posts/default" htmlUrl="http://codeasi.blogspot.com/feeds/posts/default"/>
+            <outline text="Idées fixes" title="Idées fixes" type="rss" xmlUrl="http://beta.blogger.com/feeds/6331511146513686259/posts/summary" htmlUrl="http://ideesfixes.blogspot.com/feeds/posts/summary"/>
+            <outline text="Blog - Václav Novák (novak.blog.respekt.ihned.cz)" title="Blog - Václav Novák (novak.blog.respekt.ihned.cz)" type="rss" xmlUrl="http://novak.blog.respekt.ihned.cz/?m=rss" htmlUrl="http://novak.blog.respekt.ihned.cz/"/>
+            <outline text="Šufle" title="Šufle" type="rss" xmlUrl="http://prihradka.blogspot.com/feeds/posts/default?alt=rss" htmlUrl="http://prihradka.blogspot.com/"/>
+            <outline text="Marigold.cz" title="Marigold.cz" type="rss" xmlUrl="http://feedproxy.google.com/marigoldcz" htmlUrl="http://www.marigold.cz"/>
+            <outline text="Tomáš Čupr" title="Tomáš Čupr" type="rss" xmlUrl="http://tomcupr.cz/rss" htmlUrl="http://tomcupr.cz/"/>
+            <outline text="Schickelgruber blogisek - Články" title="Schickelgruber blogisek - Články" type="rss" xmlUrl="http://schickelgruber.blog.cz/rss-kanal/prehled-clanku" htmlUrl="http://schickelgruber.blog.cz/"/>
+            <outline text="synopsi's posterous" title="synopsi's posterous" type="rss" xmlUrl="http://feeds.feedburner.com/small-synopsi" htmlUrl="http://turek.co/"/>
+            <outline text="Bloc.cz" title="Bloc.cz" type="rss" xmlUrl="http://www.bloc.cz/rsshandler.aspx?catid=1&amp;itemcount=10&amp;dontparse=true" htmlUrl="http://www.bloc.cz/bloccz/default.aspx"/>
+            <outline text="festival" title="festival" type="rss" xmlUrl="http://festival.naracea.com/feed/" htmlUrl="http://festival.naracea.com"/>
+        </outline>
+        <outline title="tech news" text="tech news">
+            <outline text="Babbage" title="Babbage" type="rss" xmlUrl="http://www.economist.com/blogs/babbage/index.xml" htmlUrl="http://www.economist.com/node/21005042/index.xml"/>
+            <outline text="SPIEGEL ONLINE - Netzwelt" title="SPIEGEL ONLINE - Netzwelt" type="rss" xmlUrl="http://www.spiegel.de/netzwelt/index.rss" htmlUrl="http://www.spiegel.de"/>
+            <outline text="collision detection" title="collision detection" type="rss" xmlUrl="http://www.collisiondetection.net/index.rdf" htmlUrl="http://www.collisiondetection.net/"/>
+            <outline text="Daring Fireball" title="Daring Fireball" type="rss" xmlUrl="http://daringfireball.net/index.xml" htmlUrl="http://daringfireball.net/"/>
+            <outline text="The Great Seduction" title="The Great Seduction" type="rss" xmlUrl="http://feeds.feedburner.com/typepad/vopm" htmlUrl="http://andrewkeen.typepad.com/the_great_seduction/"/>
+            <outline text="Scobleizer" title="Scobleizer" type="rss" xmlUrl="http://scobleizer.com/feed/" htmlUrl="http://scobleizer.com"/>
+            <outline text="Good Experience" title="Good Experience" type="rss" xmlUrl="http://feeds.feedburner.com/goodexperience/1" htmlUrl="http://goodexperience.com/"/>
+            <outline text="Smarterware" title="Smarterware" type="rss" xmlUrl="http://feeds.feedburner.com/smarterware" htmlUrl="http://smarterware.org"/>
+        </outline>
+    </body>
+</opml>
